@@ -1,0 +1,3 @@
+VASP POTCARs:
+Nb: PAW_PBE Nb_pv 08Apr2002
+Br: PAW_PBE Br 06Sep2000                   
