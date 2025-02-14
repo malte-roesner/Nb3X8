@@ -1,0 +1,16 @@
+triqs_Nb3X8_Hubbard-I: Calculation pipeline for Hubbard-I for Nb3X8
+
+Copyright (C) 2025, Joost Aretz, Sergii Grytsiuk, Malte Rösner, Hugo U. R. Strand
+
+triqs_Nb3X8_Hubbard-I is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+ 
+triqs_Nb3X8_Hubbard-I is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+triqs_Nb3X8_Hubbard-I (in the file COPYING.txt in this directory). If not, see
+<http://www.gnu.org/licenses/>.
