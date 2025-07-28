@@ -1,0 +1,5 @@
+Nb3Br8
+&INPUT
+    prefix = 'Nb3Br8'
+    outdir = './out'
+/

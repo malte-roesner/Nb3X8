@@ -1,0 +1,8 @@
+
+&INPUT
+    fildyn = 'dyn'
+    flfrc = 'Nb3Br8.ifc'
+
+    zasr = 'simple'
+
+/

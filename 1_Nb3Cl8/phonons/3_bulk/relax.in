@@ -1,0 +1,78 @@
+&CONTROL
+   calculation      = 'relax'
+   !restart_mode     = 'from_scratch'
+   verbosity        = 'high'
+   outdir           = './out'
+   prefix           = 'Nb3Cl8'
+   pseudo_dir       = '/scratch-shared/mroesner/Nb3X8_cDFPT/pp'
+   tprnfor          = .true.
+   tstress          = .true.
+   forc_conv_thr    = 1.0D-6     ! default: 1.0D-3
+/
+&SYSTEM
+   ibrav            = 0
+   nat              = 22
+   ntyp             = 2
+   ecutwfc          = 100.0
+   occupations      = 'smearing'
+   degauss          = 0.0036749293
+   smearing         = 'marzari-vanderbilt'
+   input_dft        = 'pbe'
+   vdw_corr         = 'grimme-d3'
+   dftd3_threebody  = .false.
+   !nr1              = 180
+   !nr2              = 180
+   !nr3              = 180
+/
+&ELECTRONS
+    conv_thr        = 1e-12
+    diago_full_acc  = .true.
+/
+&IONS
+   ion_dynamics      = 'damp'
+   !bfgs_ndim         = 5
+   pot_extrapolation = 'second_order' 
+   wfc_extrapolation = 'second_order'
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Nb 92.90637 Nb_ONCV_PBE-1.2.upf
+Cl 35.45270 Cl_ONCV_PBE-1.2.upf
+
+K_POINTS automatic
+6 6 6  0 0 0
+
+CELL_PARAMETERS angstrom
+     5.8333552227669871    3.3678892081432297    0.0000000000000000
+    -5.8333552227669871    3.3678892081432297    0.0000000000000000
+    -3.8889034818446584    0.0000000000000000   12.2795884954943020
+
+ATOMIC_POSITIONS (crystal)
+Nb               0.0542802555       -0.0542802555       -0.2524658041
+Nb               0.0542802555        0.3610263151       -0.2524658041
+Nb              -0.3610263151       -0.0542802555       -0.2524658041
+Nb              -0.0542802555        0.0542802555        0.2524658041
+Nb              -0.0542802555       -0.3610263151        0.2524658041
+Nb               0.3610263151        0.0542802555        0.2524658041
+Cl              -0.1339606565        0.1339606565       -0.4018819695
+Cl               0.3808770889       -0.3808770889       -0.3633962013
+Cl               0.3808770889        0.1251503790       -0.3633962013
+Cl              -0.1251503790       -0.3808770889       -0.3633962013
+Cl               0.2861642817       -0.2861642817       -0.1415071548
+Cl              -0.2050966422        0.2050966422       -0.1189196431
+Cl              -0.2050966422       -0.2912736413       -0.1189196431
+Cl               0.2912736413        0.2050966422       -0.1189196431
+Cl               0.2050966422       -0.2050966422        0.1189196431
+Cl               0.2050966422        0.2912736413        0.1189196431
+Cl              -0.2912736413       -0.2050966422        0.1189196431
+Cl              -0.2861642817        0.2861642817        0.1415071548
+Cl              -0.3808770889        0.3808770889        0.3633962013
+Cl              -0.3808770889       -0.1251503790        0.3633962013
+Cl               0.1251503790        0.3808770889        0.3633962013
+Cl               0.1339606565       -0.1339606565        0.4018819695
+

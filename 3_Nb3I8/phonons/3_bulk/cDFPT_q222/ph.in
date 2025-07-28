@@ -1,0 +1,23 @@
+Nb3I8
+&INPUTPH
+    prefix = 'Nb3I8'
+    outdir = './out'
+
+    recover = .true.
+
+    fildyn = 'dyn'
+    fildvscf = 'dvscf'
+
+    ldisp = .true.
+    nq1 = 2
+    nq2 = 2
+    nq3 = 2
+
+    tr2_ph = 1e-16
+
+    cdfpt_bnd(1:2) = 175,176
+
+    !verbosity = 'high'
+    !diagonalization = 'cg'
+
+/

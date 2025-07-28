@@ -1,0 +1,324 @@
+
+     Program PHONON v.7.4.1 starts on 12May2025 at 14:42:48 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on   384 processors
+
+     MPI processes distributed on     2 nodes
+     332825 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+
+     Reading xml data from directory:
+
+     ./out/Nb3I8.save/
+
+     K-points division:     npool     =      12
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         179     179     47                19743    19743    2690
+     Max         180     180     48                19748    19748    2697
+     Sum        5731    5731   1519               631887   631887   86161
+
+     Using Slab Decomposition
+
+     Reading collected, re-writing distributed wavefunctions in ./out/
+
+     cDFPT active subspace:
+     Complete band 175
+     Complete band 176
+
+     Saving dvscf to file. Distribute only q points, not irreducible representations.
+        3 /   4 q-points for this run, from  2 to  4:
+       N       xq(1)         xq(2)         xq(3) 
+       1   0.000000000   0.000000000   0.000000000
+       2   0.000000000   0.000000000  -0.277547388
+       3   0.288675135  -0.500000000   0.092515796
+       4   0.288675135  -0.500000000  -0.185031592
+
+
+     Calculation of q =    0.0000000   0.0000000  -0.2775474
+
+     Bands found: reading from ./out/_ph0/Nb3I8.q_2/
+
+     Reading xml data from directory:
+
+     ./out/_ph0/Nb3I8.q_2/Nb3I8.save/
+     Message from routine qexsd_readschema :
+     input info not found or not readable in xml file
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         179     179     47                19743    19743    2723
+     Max         180     180     48                19748    19748    2733
+     Sum        5731    5731   1531               631887   631887   87283
+
+     Using Slab Decomposition
+
+     read_file_new: Wavefunctions not in collected format?!?
+     read_file: Wavefunctions in collected format not available
+
+     Restart in Phonon calculation
+
+     Nb3I8                                                                      
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      14.4200  a.u.
+     unit-cell volume          =    4677.9756 (a.u.)^3
+     number of atoms/cell      =           22
+     number of atomic types    =            2
+     kinetic-energy cut-off    =     100.0000  Ry
+     charge density cut-off    =     400.0000  Ry
+     convergence threshold     =      1.0E-16
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=   14.41999  celldm(2)=    0.00000  celldm(3)=    0.00000
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  0.8660  0.5000  0.0000 )  
+               a(2) = ( -0.8660  0.5000  0.0000 )  
+               a(3) = ( -0.5774  0.0000  1.8015 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.5774  1.0000  0.1850 )  
+               b(2) = ( -0.5774  1.0000 -0.1850 )  
+               b(3) = (  0.0000 -0.0000  0.5551 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1  Nb     92.9064   tau(    1) = (   -1.21677    0.50000    1.34532  )
+        2  Nb     92.9064   tau(    2) = (   -0.69065    0.19625    1.34532  )
+        3  Nb     92.9064   tau(    3) = (   -0.69065    0.80375    1.34532  )
+        4  Nb     92.9064   tau(    4) = (    0.63942    0.50000    0.45617  )
+        5  Nb     92.9064   tau(    5) = (    0.11330    0.80375    0.45617  )
+        6  Nb     92.9064   tau(    6) = (    0.11330    0.19625    0.45617  )
+        7  I     126.9045   tau(    7) = (    0.28868    0.50000    1.06514  )
+        8  I     126.9045   tau(    8) = (   -0.57012    0.50000    1.14509  )
+        9  I     126.9045   tau(    9) = (   -0.14795    0.25626    1.14509  )
+       10  I     126.9045   tau(   10) = (   -0.14795    0.74374    1.14509  )
+       11  I     126.9045   tau(   11) = (   -0.86603    0.50000    1.53629  )
+       12  I     126.9045   tau(   12) = (   -0.00089    0.50000    1.59225  )
+       13  I     126.9045   tau(   13) = (   -0.43257    0.74923    1.59225  )
+       14  I     126.9045   tau(   14) = (   -0.43257    0.25077    1.59225  )
+       15  I     126.9045   tau(   15) = (   -0.57646    0.50000    0.20924  )
+       16  I     126.9045   tau(   16) = (   -0.14478    0.25077    0.20924  )
+       17  I     126.9045   tau(   17) = (   -0.14478    0.74923    0.20924  )
+       18  I     126.9045   tau(   18) = (    0.28868    0.50000    0.26521  )
+       19  I     126.9045   tau(   19) = (   -0.00723    0.50000    0.65640  )
+       20  I     126.9045   tau(   20) = (   -0.42940    0.74374    0.65640  )
+       21  I     126.9045   tau(   21) = (   -0.42940    0.25626    0.65640  )
+       22  I     126.9045   tau(   22) = (   -0.86603    0.50000    0.73635  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000  -0.2775474 )
+
+     13 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff = 2106.8320  (  19747 G-vectors)     FFT grid: (180,180,180)
+
+     number of k points=    64  Gaussian smearing, width (Ry)=  0.0037
+
+     PseudoPot. # 1 for Nb read from file:
+     /scratch-shared/mroesner/Nb3X8_cDFPT/pp/Nb_ONCV_PBE-1.2.upf
+     MD5 check sum: 2c750ac0b6910ff4cf0ab5f6c4124a64
+     Pseudo is Norm-conserving, Zval = 13.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for I  read from file:
+     /scratch-shared/mroesner/Nb3X8_cDFPT/pp/I_ONCV_PBE-1.2.upf
+     MD5 check sum: 8277ef51204d8074ead4596f3b37a2aa
+     Pseudo is Norm-conserving, Zval = 17.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     Mode symmetry, D_3d (-3m)  point group:
+
+
+     Atomic displacements:
+     There are   44 irreducible representations
+
+     Representation     1      1 modes -  Done
+
+     Representation     2      1 modes -  Done
+
+     Representation     3      1 modes -  Done
+
+     Representation     4      1 modes -  Done
+
+     Representation     5      1 modes -  Done
+
+     Representation     6      1 modes -  Done
+
+     Representation     7      1 modes -  Done
+
+     Representation     8      1 modes -  Done
+
+     Representation     9      1 modes -  Done
+
+     Representation    10      1 modes -  Done
+
+     Representation    11      1 modes -  Done
+
+     Representation    12      2 modes -  Done
+
+     Representation    13      2 modes -  To be done
+
+     Representation    14      2 modes -  To be done
+
+     Representation    15      2 modes -  To be done
+
+     Representation    16      2 modes -  To be done
+
+     Representation    17      2 modes -  To be done
+
+     Representation    18      2 modes -  To be done
+
+     Representation    19      2 modes -  To be done
+
+     Representation    20      2 modes -  To be done
+
+     Representation    21      2 modes -  To be done
+
+     Representation    22      2 modes -  To be done
+
+     Representation    23      1 modes -  To be done
+
+     Representation    24      1 modes -  To be done
+
+     Representation    25      1 modes -  To be done
+
+     Representation    26      1 modes -  To be done
+
+     Representation    27      1 modes -  To be done
+
+     Representation    28      1 modes -  To be done
+
+     Representation    29      1 modes -  To be done
+
+     Representation    30      1 modes -  To be done
+
+     Representation    31      1 modes -  To be done
+
+     Representation    32      1 modes -  To be done
+
+     Representation    33      1 modes -  To be done
+
+     Representation    34      2 modes -  To be done
+
+     Representation    35      2 modes -  To be done
+
+     Representation    36      2 modes -  To be done
+
+     Representation    37      2 modes -  To be done
+
+     Representation    38      2 modes -  To be done
+
+     Representation    39      2 modes -  To be done
+
+     Representation    40      2 modes -  To be done
+
+     Representation    41      2 modes -  To be done
+
+     Representation    42      2 modes -  To be done
+
+     Representation    43      2 modes -  To be done
+
+     Representation    44      2 modes -  To be done
+
+
+     Message from routine init_vloc:
+     Interpolation table for Vloc re-allocated
+     PHONON       :     20.49s CPU     56.93s WALL
+
+
+
+     Representation #  13 modes #  14  15
+
+     Self-consistent Calculation
+
+      iter #   6 total cpu time :   205.6 secs   av.it.:  14.8
+      thresh= 2.785E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.072E-12
+
+      iter #   7 total cpu time :   357.8 secs   av.it.:  17.8
+      thresh= 1.036E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.215E-14
+
+      iter #   8 total cpu time :   509.9 secs   av.it.:  18.8
+      thresh= 1.793E-08 alpha_mix =  0.700 |ddv_scf|^2 =  9.376E-15
+
+      iter #   9 total cpu time :   660.0 secs   av.it.:  18.8
+      thresh= 9.683E-09 alpha_mix =  0.700 |ddv_scf|^2 =  8.017E-15
+
+      iter #  10 total cpu time :   813.0 secs   av.it.:  17.8
+      thresh= 8.954E-09 alpha_mix =  0.700 |ddv_scf|^2 =  3.242E-14
+
+      iter #  11 total cpu time :   959.1 secs   av.it.:  16.1
+      thresh= 1.801E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.203E-16
+
+      iter #  12 total cpu time :  1118.1 secs   av.it.:  17.9
+      thresh= 1.484E-09 alpha_mix =  0.700 |ddv_scf|^2 =  8.341E-17
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  14 modes #  16  17
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :  1232.0 secs   av.it.:   6.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  8.263E-09

@@ -1,0 +1,61 @@
+&CONTROL
+   calculation      = 'scf',
+   verbosity        = 'high'
+   outdir           = './out'
+   prefix           = 'Nb3I8'
+   tprnfor          = .true.
+   tstress          = .true.
+   pseudo_dir       = '/scratch-shared/mroesner/Nb3X8_cDFPT/pp'
+/
+&SYSTEM
+   ibrav            = 0
+   nat              = 11
+   ntyp             = 2
+   ecutwfc          = 100.0
+   occupations      = 'smearing'
+   degauss          = 0.0036749293
+   smearing         = 'gaussian'
+   input_dft        = 'pbe'
+   vdw_corr         = 'grimme-d3'
+   dftd3_threebody  = .false.,
+   !nr1              = 180,
+   !nr2              = 180,
+   !nr3              = 180,
+/
+&ELECTRONS
+   conv_thr         = 1e-12
+    diago_full_acc  = .true.
+/
+&IONS
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Nb 92.90637 Nb_ONCV_PBE-1.2.upf
+I 126.90447 I_ONCV_PBE-1.2.upf
+
+K_POINTS automatic
+6 6 1  0 0 0
+
+CELL_PARAMETERS (angstrom)
+   6.608404008   3.815363833   0.000000000
+  -6.608404008   3.815363833   0.000000000
+   0.000000000   0.000000000  34.366778354
+
+ATOMIC_POSITIONS (angstrom)
+Nb               4.8753857310        3.8153638329        3.4166936590
+Nb               0.8665091383        6.1298898126        3.4166936590
+Nb               0.8665091383        1.5008378531        3.4166936590
+I               -4.4087662037        3.8153638329        1.5032500002
+I               -1.0998189021        1.9049422174        1.5032500002
+I               -1.0998189021        5.7257854483        1.5032500002
+I                2.2028013360        3.8153638329        1.9516014329
+I               -0.0387063794        3.8153638329        4.9580446461
+I               -3.2848488143        5.6895250413        4.9580446461
+I               -3.2848488143        1.9412026244        4.9580446461
+I               -6.6084040079        3.8153638329        5.5736880040
+

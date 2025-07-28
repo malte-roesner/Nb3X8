@@ -1,0 +1,66 @@
+&CONTROL
+   calculation      = 'relax'
+   !restart_mode     = 'from_scratch'
+   verbosity        = 'high'
+   outdir           = './out'
+   prefix           = 'Nb3F8'
+   pseudo_dir       = '/scratch-shared/mroesner/Nb3X8_cDFPT/pp'
+   tprnfor          = .true.
+   tstress          = .true.
+   forc_conv_thr    = 1.0D-6     ! default: 1.0D-3
+/
+&SYSTEM
+   ibrav            = 0
+   nat              = 11
+   ntyp             = 2
+   ecutwfc          = 100.0
+   occupations      = 'smearing'
+   degauss          = 0.0036749293
+   smearing         = 'marzari-vanderbilt'
+   input_dft        = 'pbe'
+   vdw_corr         = 'grimme-d3'
+   dftd3_threebody  = .false.
+   !nr1              = 180
+   !nr2              = 180
+   !nr3              = 180
+/
+&ELECTRONS
+    conv_thr        = 1e-12
+    diago_full_acc  = .true.
+/
+&IONS
+   ion_dynamics      = 'damp'
+   !bfgs_ndim         = 5
+   pot_extrapolation = 'second_order' 
+   wfc_extrapolation = 'second_order'
+/
+&CELL
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Nb 92.90637 Nb_ONCV_PBE-1.2.upf
+F  18.99840 F_ONCV_PBE-1.2.upf
+
+K_POINTS automatic
+6 6 1  0 0 0
+
+CELL_PARAMETERS angstrom
+    5.11245879008615      2.95167945867711      0.00000000000000
+   -5.11245879008615      2.95167945867711      0.00000000000000
+    0.00000000000000      0.00000000000000     24.30205686692268
+
+ATOMIC_POSITIONS (crystal)
+Nb               0.1456228793       -0.1456228793       -0.1038898805
+Nb               0.1456228793        0.2912457585       -0.1038898805
+Nb              -0.2912457585       -0.1456228793       -0.1038898805
+F                0.0000000000       -0.0000000000       -0.1685835876
+F                0.4930599107       -0.4930599107       -0.1492724126
+F                0.4930599107       -0.0138801786       -0.1492724126
+F                0.0138801786       -0.4930599107       -0.1492724126
+F                0.3333333333       -0.3333333333       -0.0572150677
+F               -0.1618398854        0.1618398854       -0.0486575666
+F               -0.1618398854       -0.3236797708       -0.0486575666
+F                0.3236797708        0.1618398854       -0.0486575666

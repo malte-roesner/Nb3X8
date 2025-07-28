@@ -1,0 +1,956 @@
+
+     Program d3hess v.7.3.1 starts on  5Jul2025 at 18:50:32 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       1 processor cores
+     Number of MPI processes:                 1
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     368166 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./out/Nb3Br8.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        4957    4957   1333               517183   517183   70941
+
+     Using Slab Decomposition
+
+
+     Differentiation step:           0.000020000000
+     DFT-D3 version:    3
+     DFT-D3 threebody: F
+     Using a general (and memory consuming) algorithm for any q 
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190240270839358       supercell gradient
+ |G(force)| =   2.4172979234040232E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172979234040232E-002  unit cell gradient
+
+     Number of images for CN:    4   4   2
+
+     Number of images for VdW:    9   9   4
+
+     DFT-D3 dispersion forces in the unit cell:
+     atom    1 type  1   force =    -0.00221587    0.00000000   -0.00011936
+     atom    2 type  1   force =     0.00110795   -0.00191901   -0.00011937
+     atom    3 type  1   force =     0.00110794    0.00191902   -0.00011937
+     atom    4 type  1   force =     0.00221589   -0.00000000    0.00011931
+     atom    5 type  1   force =    -0.00110795    0.00191901    0.00011933
+     atom    6 type  1   force =    -0.00110795   -0.00191902    0.00011934
+     atom    7 type  2   force =    -0.00000000   -0.00000000   -0.00097197
+     atom    8 type  2   force =     0.00123029   -0.00000000   -0.00113897
+     atom    9 type  2   force =    -0.00061521    0.00106551   -0.00113898
+     atom   10 type  2   force =    -0.00061521   -0.00106551   -0.00113899
+     atom   11 type  2   force =    -0.00000002   -0.00000000    0.00303728
+     atom   12 type  2   force =    -0.00072605   -0.00000000    0.00027243
+     atom   13 type  2   force =     0.00036305   -0.00062880    0.00027243
+     atom   14 type  2   force =     0.00036305    0.00062880    0.00027243
+     atom   15 type  2   force =     0.00072609   -0.00000000   -0.00027246
+     atom   16 type  2   force =    -0.00036302    0.00062880   -0.00027245
+     atom   17 type  2   force =    -0.00036303   -0.00062880   -0.00027245
+     atom   18 type  2   force =     0.00000003   -0.00000000   -0.00303729
+     atom   19 type  2   force =    -0.00123032   -0.00000000    0.00113900
+     atom   20 type  2   force =     0.00061519   -0.00106552    0.00113902
+     atom   21 type  2   force =     0.00061519    0.00106552    0.00113903
+     atom   22 type  2   force =    -0.00000003   -0.00000000    0.00097206
+
+     Number of cells replicated along each semiaxis:    9   9   4
+
+     Number of cells used for Hessian allocations:    9   9   4
+     Number of cells in the supercell (Hessian):      3249
+     Number of atoms in the supercell (Hessian):     71478
+     Hessian allocation dimensions:  14152644
+
+     Three body terms in DFT-D3 disabled for Hessian calculation
+     Displacement step:    1   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198397561282819       supercell gradient
+ |G(force)| =   2.4172994847387382E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172994847387382E-002  unit cell gradient
+     Displacement step:    1   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198402418527897       supercell gradient
+ |G(force)| =   2.4172967119746373E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172967119746373E-002  unit cell gradient
+ |H(unit cell)| =   1.2462442196221321E-007
+     Displacement step:    1   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198403364320086       supercell gradient
+ |G(force)| =   2.4173007130342667E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173007130342667E-002  unit cell gradient
+     Displacement step:    1   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198402033929866       supercell gradient
+ |G(force)| =   2.4173007115406993E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173007115406993E-002  unit cell gradient
+ |H(unit cell)| =   1.3347222013256870E-007
+     Displacement step:    1   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198403606267976       supercell gradient
+ |G(force)| =   2.4173008860831569E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173008860831569E-002  unit cell gradient
+     Displacement step:    1   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198396278236694       supercell gradient
+ |G(force)| =   2.4172952152908225E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172952152908225E-002  unit cell gradient
+ |H(unit cell)| =   1.8715531109425775E-007
+     Displacement step:    2   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190239111936445       supercell gradient
+ |G(force)| =   2.4172972008789852E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172972008789852E-002  unit cell gradient
+     Displacement step:    2   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190242355913041       supercell gradient
+ |G(force)| =   2.4172993977456314E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172993977456314E-002  unit cell gradient
+ |H(unit cell)| =   1.2640259713357288E-007
+     Displacement step:    2   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190238794543339       supercell gradient
+ |G(force)| =   2.4172992523590398E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172992523590398E-002  unit cell gradient
+     Displacement step:    2   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190242998284347       supercell gradient
+ |G(force)| =   2.4172977400065451E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172977400065451E-002  unit cell gradient
+ |H(unit cell)| =   1.0500686081919251E-007
+     Displacement step:    2   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190246842191578       supercell gradient
+ |G(force)| =   2.4173023593523815E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173023593523815E-002  unit cell gradient
+     Displacement step:    2   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14190234742230035       supercell gradient
+ |G(force)| =   2.4172943268515257E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172943268515257E-002  unit cell gradient
+ |H(unit cell)| =   1.5489183335695859E-007
+     Displacement step:    3   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14193433892225787       supercell gradient
+ |G(force)| =   2.4172971255411367E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172971255411367E-002  unit cell gradient
+     Displacement step:    3   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14193437588075219       supercell gradient
+ |G(force)| =   2.4172994730835708E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172994730835708E-002  unit cell gradient
+ |H(unit cell)| =   1.2640259021883397E-007
+     Displacement step:    3   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14193434457439688       supercell gradient
+ |G(force)| =   2.4172977493363168E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172977493363168E-002  unit cell gradient
+     Displacement step:    3   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14193437347859628       supercell gradient
+ |G(force)| =   2.4172992430290426E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172992430290426E-002  unit cell gradient
+ |H(unit cell)| =   1.0500684321190988E-007
+     Displacement step:    3   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14193441802541318       supercell gradient
+ |G(force)| =   2.4173022686609473E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173022686609473E-002  unit cell gradient
+     Displacement step:    3   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14193429794326590       supercell gradient
+ |G(force)| =   2.4172944175432393E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172944175432393E-002  unit cell gradient
+ |H(unit cell)| =   1.5489182938843141E-007
+     Displacement step:    4   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198032827002829       supercell gradient
+ |G(force)| =   2.4172960993663905E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172960993663905E-002  unit cell gradient
+     Displacement step:    4   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198026948871389       supercell gradient
+ |G(force)| =   2.4172997473039699E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172997473039699E-002  unit cell gradient
+ |H(unit cell)| =   1.2462439266067697E-007
+     Displacement step:    4   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198032492949722       supercell gradient
+ |G(force)| =   2.4173007891836126E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173007891836126E-002  unit cell gradient
+     Displacement step:    4   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198033071985797       supercell gradient
+ |G(force)| =   2.4173006559710775E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173006559710775E-002  unit cell gradient
+ |H(unit cell)| =   1.3347218544304723E-007
+     Displacement step:    4   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198025799387495       supercell gradient
+ |G(force)| =   2.4172946994669708E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172946994669708E-002  unit cell gradient
+     Displacement step:    4   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14198033976556718       supercell gradient
+ |G(force)| =   2.4173011472391651E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173011472391651E-002  unit cell gradient
+ |H(unit cell)| =   1.8715526930395844E-007
+     Displacement step:    5   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14189801729045196       supercell gradient
+ |G(force)| =   2.4172991955390223E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172991955390223E-002  unit cell gradient
+     Displacement step:    5   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14189795127800278       supercell gradient
+ |G(force)| =   2.4172973698181301E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172973698181301E-002  unit cell gradient
+ |H(unit cell)| =   1.2640257160740460E-007
+     Displacement step:    5   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14189799815013449       supercell gradient
+ |G(force)| =   2.4172979208327713E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172979208327713E-002  unit cell gradient
+     Displacement step:    5   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14189797421391315       supercell gradient
+ |G(force)| =   2.4172990928309858E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172990928309858E-002  unit cell gradient
+ |H(unit cell)| =   1.0500683432006421E-007
+     Displacement step:    5   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14189791648159977       supercell gradient
+ |G(force)| =   2.4172947198003249E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172947198003249E-002  unit cell gradient
+     Displacement step:    5   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14189805439313630       supercell gradient
+ |G(force)| =   2.4173020471843557E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173020471843557E-002  unit cell gradient
+ |H(unit cell)| =   1.5489179476802881E-007
+     Displacement step:    6   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14192299743255157       supercell gradient
+ |G(force)| =   2.4172990938335085E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172990938335085E-002  unit cell gradient
+     Displacement step:    6   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14192293352352919       supercell gradient
+ |G(force)| =   2.4172974715233712E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172974715233712E-002  unit cell gradient
+ |H(unit cell)| =   1.2640256890155529E-007
+     Displacement step:    6   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14192299195157834       supercell gradient
+ |G(force)| =   2.4172990467085553E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172990467085553E-002  unit cell gradient
+     Displacement step:    6   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14192294280032011       supercell gradient
+ |G(force)| =   2.4172979669559044E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172979669559044E-002  unit cell gradient
+ |H(unit cell)| =   1.0500682191077544E-007
+     Displacement step:    6   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14192289711678427       supercell gradient
+ |G(force)| =   2.4172946212008165E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172946212008165E-002  unit cell gradient
+     Displacement step:    6   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14192303614554988       supercell gradient
+ |G(force)| =   2.4173021457843464E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173021457843464E-002  unit cell gradient
+ |H(unit cell)| =   1.5489178951821757E-007
+     Displacement step:    7   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171250037598884       supercell gradient
+ |G(force)| =   2.4173009780822378E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173009780822378E-002  unit cell gradient
+     Displacement step:    7   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171252290716291       supercell gradient
+ |G(force)| =   2.4172991649741151E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172991649741151E-002  unit cell gradient
+ |H(unit cell)| =   1.3856804591684898E-007
+     Displacement step:    7   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171251682395117       supercell gradient
+ |G(force)| =   2.4173003254431946E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173003254431946E-002  unit cell gradient
+     Displacement step:    7   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171251448292910       supercell gradient
+ |G(force)| =   2.4173002751115148E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173002751115148E-002  unit cell gradient
+ |H(unit cell)| =   1.0905001017657599E-007
+     Displacement step:    7   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171245730671836       supercell gradient
+ |G(force)| =   2.4172962186180695E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172962186180695E-002  unit cell gradient
+     Displacement step:    7   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171252301337353       supercell gradient
+ |G(force)| =   2.4172996281604207E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172996281604207E-002  unit cell gradient
+ |H(unit cell)| =   6.9018918326475030E-008
+     Displacement step:    8   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14176285825943138       supercell gradient
+ |G(force)| =   2.4173027931080903E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173027931080903E-002  unit cell gradient
+     Displacement step:    8   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14176280340025396       supercell gradient
+ |G(force)| =   2.4172930534641309E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172930534641309E-002  unit cell gradient
+ |H(unit cell)| =   1.4544434041268118E-007
+     Displacement step:    8   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14176285182285780       supercell gradient
+ |G(force)| =   2.4172997986503859E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172997986503859E-002  unit cell gradient
+     Displacement step:    8   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14176285069833858       supercell gradient
+ |G(force)| =   2.4172998517050095E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172998517050095E-002  unit cell gradient
+ |H(unit cell)| =   7.2384104004704952E-008
+     Displacement step:    8   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14176280902880323       supercell gradient
+ |G(force)| =   2.4172956192323344E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172956192323344E-002  unit cell gradient
+     Displacement step:    8   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14176285263145072       supercell gradient
+ |G(force)| =   2.4173002273188859E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173002273188859E-002  unit cell gradient
+ |H(unit cell)| =   8.7342099665547195E-008
+     Displacement step:    9   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175537105449265       supercell gradient
+ |G(force)| =   2.4172975301179876E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172975301179876E-002  unit cell gradient
+     Displacement step:    9   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175543199321292       supercell gradient
+ |G(force)| =   2.4173023820964756E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173023820964756E-002  unit cell gradient
+ |H(unit cell)| =   1.6327333675365909E-007
+     Displacement step:    9   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175543722182760       supercell gradient
+ |G(force)| =   2.4173035218531241E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173035218531241E-002  unit cell gradient
+     Displacement step:    9   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175535382146856       supercell gradient
+ |G(force)| =   2.4172950364321506E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172950364321506E-002  unit cell gradient
+ |H(unit cell)| =   1.6079100760955246E-007
+     Displacement step:    9   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175540977375012       supercell gradient
+ |G(force)| =   2.4172969452321332E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172969452321332E-002  unit cell gradient
+     Displacement step:    9   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175537549739639       supercell gradient
+ |G(force)| =   2.4173003069250028E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173003069250028E-002  unit cell gradient
+ |H(unit cell)| =   1.5420905212434158E-007
+     Displacement step:   10   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14178315297724728       supercell gradient
+ |G(force)| =   2.4172975809066577E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172975809066577E-002  unit cell gradient
+     Displacement step:   10   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14178321228995333       supercell gradient
+ |G(force)| =   2.4173023313080591E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173023313080591E-002  unit cell gradient
+ |H(unit cell)| =   1.6327333560943754E-007
+     Displacement step:   10   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14178313667425327       supercell gradient
+ |G(force)| =   2.4172951722337535E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172951722337535E-002  unit cell gradient
+     Displacement step:   10   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14178321658854451       supercell gradient
+ |G(force)| =   2.4173033860513293E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173033860513293E-002  unit cell gradient
+ |H(unit cell)| =   1.6079101006855107E-007
+     Displacement step:   10   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14178319032752729       supercell gradient
+ |G(force)| =   2.4172968991254956E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172968991254956E-002  unit cell gradient
+     Displacement step:   10   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14178315716315293       supercell gradient
+ |G(force)| =   2.4173003530354974E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173003530354974E-002  unit cell gradient
+ |H(unit cell)| =   1.5420905434087521E-007
+     Displacement step:   11   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170994146040461       supercell gradient
+ |G(force)| =   2.4172952025359021E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172952025359021E-002  unit cell gradient
+     Displacement step:   11   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171006236236242       supercell gradient
+ |G(force)| =   2.4173006440956123E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173006440956123E-002  unit cell gradient
+ |H(unit cell)| =   1.5240123662707789E-007
+     Displacement step:   11   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171001244599427       supercell gradient
+ |G(force)| =   2.4172990094460976E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172990094460976E-002  unit cell gradient
+     Displacement step:   11   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171001389350346       supercell gradient
+ |G(force)| =   2.4172989941535855E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172989941535855E-002  unit cell gradient
+ |H(unit cell)| =   8.5994862709204142E-008
+     Displacement step:   11   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171005832201447       supercell gradient
+ |G(force)| =   2.4173027663106441E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173027663106441E-002  unit cell gradient
+     Displacement step:   11   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170994549847160       supercell gradient
+ |G(force)| =   2.4172930800356769E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172930800356769E-002  unit cell gradient
+ |H(unit cell)| =   1.3626968518461738E-007
+     Displacement step:   12   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171069466013936       supercell gradient
+ |G(force)| =   2.4172951665006763E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172951665006763E-002  unit cell gradient
+     Displacement step:   12   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171075088077120       supercell gradient
+ |G(force)| =   2.4173006801430641E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173006801430641E-002  unit cell gradient
+ |H(unit cell)| =   1.8696524974816513E-007
+     Displacement step:   12   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171075158619290       supercell gradient
+ |G(force)| =   2.4173007558588006E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173007558588006E-002  unit cell gradient
+     Displacement step:   12   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171074991613411       supercell gradient
+ |G(force)| =   2.4173006017596657E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173006017596657E-002  unit cell gradient
+ |H(unit cell)| =   1.4999276935082669E-007
+     Displacement step:   12   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171075120210797       supercell gradient
+ |G(force)| =   2.4173016016780343E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173016016780343E-002  unit cell gradient
+     Displacement step:   12   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14171069433874503       supercell gradient
+ |G(force)| =   2.4172942450162188E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172942450162188E-002  unit cell gradient
+ |H(unit cell)| =   2.1776086169689250E-007
+     Displacement step:   13   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175721840878569       supercell gradient
+ |G(force)| =   2.4173022182521164E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173022182521164E-002  unit cell gradient
+     Displacement step:   13   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175716757160600       supercell gradient
+ |G(force)| =   2.4172958897442545E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172958897442545E-002  unit cell gradient
+ |H(unit cell)| =   2.0243073545173362E-007
+     Displacement step:   13   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175719050466279       supercell gradient
+ |G(force)| =   2.4172978488181968E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172978488181968E-002  unit cell gradient
+     Displacement step:   13   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175719063462205       supercell gradient
+ |G(force)| =   2.4172997818493084E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172997818493084E-002  unit cell gradient
+ |H(unit cell)| =   1.7336403366085400E-007
+     Displacement step:   13   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175720576741971       supercell gradient
+ |G(force)| =   2.4173011323658181E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173011323658181E-002  unit cell gradient
+     Displacement step:   13   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175717516151101       supercell gradient
+ |G(force)| =   2.4172964641288076E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172964641288076E-002  unit cell gradient
+ |H(unit cell)| =   2.3963110318988977E-007
+     Displacement step:   14   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14177410404408139       supercell gradient
+ |G(force)| =   2.4173021144749601E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173021144749601E-002  unit cell gradient
+     Displacement step:   14   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14177405643289390       supercell gradient
+ |G(force)| =   2.4172959935218234E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172959935218234E-002  unit cell gradient
+ |H(unit cell)| =   2.0243073598704616E-007
+     Displacement step:   14   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14177406030073017       supercell gradient
+ |G(force)| =   2.4172999535245893E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172999535245893E-002  unit cell gradient
+     Displacement step:   14   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14177409533422633       supercell gradient
+ |G(force)| =   2.4172976771461095E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172976771461095E-002  unit cell gradient
+ |H(unit cell)| =   1.7336403352370165E-007
+     Displacement step:   14   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14177409585846992       supercell gradient
+ |G(force)| =   2.4173011897024036E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173011897024036E-002  unit cell gradient
+     Displacement step:   14   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14177405956700706       supercell gradient
+ |G(force)| =   2.4172964067892006E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172964067892006E-002  unit cell gradient
+ |H(unit cell)| =   2.3963110282345114E-007
+     Displacement step:   15   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170925748399932       supercell gradient
+ |G(force)| =   2.4173007105767436E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173007105767436E-002  unit cell gradient
+     Displacement step:   15   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170918420523737       supercell gradient
+ |G(force)| =   2.4172951360704329E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172951360704329E-002  unit cell gradient
+ |H(unit cell)| =   1.8696524893287466E-007
+     Displacement step:   15   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170925034683243       supercell gradient
+ |G(force)| =   2.4173007721883570E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173007721883570E-002  unit cell gradient
+     Displacement step:   15   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170924746678679       supercell gradient
+ |G(force)| =   2.4173006017207430E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173006017207430E-002  unit cell gradient
+ |H(unit cell)| =   1.4999276802503307E-007
+     Displacement step:   15   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170920757351399       supercell gradient
+ |G(force)| =   2.4172943672033979E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172943672033979E-002  unit cell gradient
+     Displacement step:   15   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14170923411533565       supercell gradient
+ |G(force)| =   2.4173014794985615E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173014794985615E-002  unit cell gradient
+ |H(unit cell)| =   2.1776087149127373E-007
+     Displacement step:   16   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173251291577516       supercell gradient
+ |G(force)| =   2.4172960277875202E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172960277875202E-002  unit cell gradient
+     Displacement step:   16   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173255276929261       supercell gradient
+ |G(force)| =   2.4173021083369429E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173021083369429E-002  unit cell gradient
+ |H(unit cell)| =   2.0243074298929214E-007
+     Displacement step:   16   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173253464275548       supercell gradient
+ |G(force)| =   2.4172999092478886E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172999092478886E-002  unit cell gradient
+     Displacement step:   16   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173252597672820       supercell gradient
+ |G(force)| =   2.4172977271068572E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172977271068572E-002  unit cell gradient
+ |H(unit cell)| =   1.7336403786413099E-007
+     Displacement step:   16   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173251917787488       supercell gradient
+ |G(force)| =   2.4172964523552262E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172964523552262E-002  unit cell gradient
+     Displacement step:   16   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173254174344235       supercell gradient
+ |G(force)| =   2.4173012010552018E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173012010552018E-002  unit cell gradient
+ |H(unit cell)| =   2.3963112013685736E-007
+     Displacement step:   17   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174951837822961       supercell gradient
+ |G(force)| =   2.4172960604296544E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172960604296544E-002  unit cell gradient
+     Displacement step:   17   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174956441966893       supercell gradient
+ |G(force)| =   2.4173020756950381E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173020756950381E-002  unit cell gradient
+ |H(unit cell)| =   2.0243074373385655E-007
+     Displacement step:   17   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174955421922697       supercell gradient
+ |G(force)| =   2.4172977375931212E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172977375931212E-002  unit cell gradient
+     Displacement step:   17   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174952351215675       supercell gradient
+ |G(force)| =   2.4172998987613444E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172998987613444E-002  unit cell gradient
+ |H(unit cell)| =   1.7336403942621718E-007
+     Displacement step:   17   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174952750183500       supercell gradient
+ |G(force)| =   2.4172963532982015E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172963532982015E-002  unit cell gradient
+     Displacement step:   17   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174955053235552       supercell gradient
+ |G(force)| =   2.4173013001154733E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173013001154733E-002  unit cell gradient
+ |H(unit cell)| =   2.3963112077158092E-007
+     Displacement step:   18   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14180323796473573       supercell gradient
+ |G(force)| =   2.4173005452447421E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173005452447421E-002  unit cell gradient
+     Displacement step:   18   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14180312956193172       supercell gradient
+ |G(force)| =   2.4172953013857662E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172953013857662E-002  unit cell gradient
+ |H(unit cell)| =   1.5240125899862114E-007
+     Displacement step:   18   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14180319396795296       supercell gradient
+ |G(force)| =   2.4172989738054661E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172989738054661E-002  unit cell gradient
+     Displacement step:   18   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14180319596613936       supercell gradient
+ |G(force)| =   2.4172990190394487E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172990190394487E-002  unit cell gradient
+ |H(unit cell)| =   8.5994867864955096E-008
+     Displacement step:   18   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14180312702672990       supercell gradient
+ |G(force)| =   2.4172929667687394E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172929667687394E-002  unit cell gradient
+     Displacement step:   18   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14180324049763862       supercell gradient
+ |G(force)| =   2.4173028795773412E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173028795773412E-002  unit cell gradient
+ |H(unit cell)| =   1.3626970597364913E-007
+     Displacement step:   19   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174470753976678       supercell gradient
+ |G(force)| =   2.4172929441576292E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172929441576292E-002  unit cell gradient
+     Displacement step:   19   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174476060771951       supercell gradient
+ |G(force)| =   2.4173029024159312E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173029024159312E-002  unit cell gradient
+ |H(unit cell)| =   1.4544435075605405E-007
+     Displacement step:   19   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174475463502673       supercell gradient
+ |G(force)| =   2.4172998407606502E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172998407606502E-002  unit cell gradient
+     Displacement step:   19   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174475408204268       supercell gradient
+ |G(force)| =   2.4172997803984454E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172997803984454E-002  unit cell gradient
+ |H(unit cell)| =   7.2384116539809298E-008
+     Displacement step:   19   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174475495698807       supercell gradient
+ |G(force)| =   2.4173002167927678E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173002167927678E-002  unit cell gradient
+     Displacement step:   19   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174471319105761       supercell gradient
+ |G(force)| =   2.4172956297582635E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172956297582635E-002  unit cell gradient
+ |H(unit cell)| =   8.7342115383123149E-008
+     Displacement step:   20   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173233658617665       supercell gradient
+ |G(force)| =   2.4173025682766854E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173025682766854E-002  unit cell gradient
+     Displacement step:   20   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173225789755445       supercell gradient
+ |G(force)| =   2.4172960640535548E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172960640535548E-002  unit cell gradient
+ |H(unit cell)| =   1.6327336356294450E-007
+     Displacement step:   20   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173226153019972       supercell gradient
+ |G(force)| =   2.4172953580647173E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172953580647173E-002  unit cell gradient
+     Displacement step:   20   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173232625183166       supercell gradient
+ |G(force)| =   2.4173024504787241E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173024504787241E-002  unit cell gradient
+ |H(unit cell)| =   1.6079101515885897E-007
+     Displacement step:   20   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173229825802444       supercell gradient
+ |G(force)| =   2.4173006489084985E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173006489084985E-002  unit cell gradient
+     Displacement step:   20   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14173229082690109       supercell gradient
+ |G(force)| =   2.4172965610718924E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172965610718924E-002  unit cell gradient
+ |H(unit cell)| =   1.5420909699277217E-007
+     Displacement step:   21   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174913148487236       supercell gradient
+ |G(force)| =   2.4173026901515543E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173026901515543E-002  unit cell gradient
+     Displacement step:   21   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174904942733135       supercell gradient
+ |G(force)| =   2.4172959421787162E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172959421787162E-002  unit cell gradient
+ |H(unit cell)| =   1.6327336302580965E-007
+     Displacement step:   21   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174910658596027       supercell gradient
+ |G(force)| =   2.4173024215423736E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173024215423736E-002  unit cell gradient
+     Displacement step:   21   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174906762349959       supercell gradient
+ |G(force)| =   2.4172953870012569E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172953870012569E-002  unit cell gradient
+ |H(unit cell)| =   1.6079101681035391E-007
+     Displacement step:   21   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174909123740798       supercell gradient
+ |G(force)| =   2.4173005365786208E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173005365786208E-002  unit cell gradient
+     Displacement step:   21   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14174908427596294       supercell gradient
+ |G(force)| =   2.4172966733976724E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172966733976724E-002  unit cell gradient
+ |H(unit cell)| =   1.5420909908012894E-007
+     Displacement step:   22   1  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175477082462190       supercell gradient
+ |G(force)| =   2.4172966446594932E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172966446594932E-002  unit cell gradient
+     Displacement step:   22   1   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175490340017416       supercell gradient
+ |G(force)| =   2.4173012415480269E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173012415480269E-002  unit cell gradient
+ |H(unit cell)| =   1.3856809634799859E-007
+     Displacement step:   22   2  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175485268677360       supercell gradient
+ |G(force)| =   2.4173002920386925E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173002920386925E-002  unit cell gradient
+     Displacement step:   22   2   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175485229280702       supercell gradient
+ |G(force)| =   2.4173003248274188E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4173003248274188E-002  unit cell gradient
+ |H(unit cell)| =   1.0905001671620226E-007
+     Displacement step:   22   3  -1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175482220831234       supercell gradient
+ |G(force)| =   2.4172996281631009E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172996281631009E-002  unit cell gradient
+     Displacement step:   22   3   1
+
+ doing analytical gradient for version...           3
+ |G(force)| =  0.14175483162307928       supercell gradient
+ |G(force)| =   2.4172962186153928E-002  supercell gradient for atoms in the unit cell 
+ |G(force)| =   2.4172962186153928E-002  unit cell gradient
+ |H(unit cell)| =   6.9018898750709887E-008
+
+     Writing Hessian on file: ./out/Nb3Br8.hess
+     force_dftd3  :      0.10s CPU      0.10s WALL (       1 calls)
+     hessian_dftd :     13.34s CPU     13.40s WALL (       1 calls)
+
+     d3hess       :     23.45s CPU     25.27s WALL
+
+
+   This run was terminated on:  18:50:57   5Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
