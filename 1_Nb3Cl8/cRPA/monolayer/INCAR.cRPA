@@ -1,0 +1,49 @@
+  SYSTEM = NbCl
+    PREC = Accurate
+   ENCUT = 550
+  ISMEAR = 0
+   SIGMA = 0.05
+    LVDW = .TRUE.
+    IVDW = 11
+  NBANDS = 192
+   NEDOS = 2000
+  LORBIT = 11
+
+
+ALGO = CRPA
+NTARGET_STATES = 1
+   NCSHMEM = 1
+NCRPA_BANDS = 48
+#LPROJECTED = .TRUE.
+
+# wannier90 controls:
+# LWANNIER90_RUN = T
+ NUM_WANN = 1
+
+
+WANNIER90_WIN = "
+
+begin projections
+c=0.000000000000,0.000000000000,3.100355044317:dz2
+end projections
+
+dis_froz_min= -2.4
+dis_froz_max= -1.8
+
+dis_num_iter = 10000
+dis_conv_tol = 1.0e-13
+search_shells=36
+
+num_iter          = 10000
+conv_tol          = 1.0E-13
+num_print_cycles  = 100
+
+write_hr = true
+
+bands_plot = true
+begin kpoint_path
+  G   0.000000000000   0.000000000000   0.000000000000      M   0.500000000000   0.000000000000   0.000000000000
+  M   0.500000000000   0.000000000000   0.000000000000      K   0.333333333333   0.333333333333   0.000000000000
+  K   0.333333333333   0.333333333333   0.000000000000      G   0.000000000000   0.000000000000   0.000000000000
+end kpoint_path
+"
